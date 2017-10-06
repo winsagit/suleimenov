@@ -1,0 +1,60 @@
+#menu {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 0 10px #777;
+}
+#table {
+	margin: 42px 0 0;
+}
+#table > thead {
+	background: white;
+	box-shadow: 0 0 5px #555;
+}
+#table > thead h3 {
+	cursor: pointer;
+	text-transform: uppercase;
+	margin: .5em 0 0;
+}
+#table th.asc > :after {
+	content: '￬'
+}
+#table th.desc > :after {
+	content: '￪'
+}
+#table th {
+	padding-left: 3em;
+}
+#table td {
+	padding-left: 2em;
+}
+#table .phone {
+	white-space: nowrap;
+}
+.icon {
+	display: inline-block;
+	color: grey;
+	width: 24px;
+	text-align: center;
+}
+@media print {
+	html {
+		font-size: 6px / 8px
+	}
+	#menu {display: none;}
+	#table {
+		width: normal;
+		margin-top: 0;
+	}
+	#table td {
+		padding-bottom: 0;
+		padding-top: 0;
+		padding-left: 0;
+	}
+	#table .evenrow {
+		background: #f9f9f9 !important;
+	}
+	.fa {display: none;}
+
+}
