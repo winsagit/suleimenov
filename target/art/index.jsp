@@ -20,8 +20,7 @@
         <button>Add</button>
         <li class="uk-navbar-content">
             <form class="uk-form uk-display-inline-block">
-                <input id="query" type="text" placeholder="Telephone"/
-
+                <input id="query" type="text" placeholder="Tlephone">
             </form>
         </li>
 
