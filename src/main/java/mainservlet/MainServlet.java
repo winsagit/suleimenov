@@ -1,5 +1,7 @@
 package mainservlet;
 
+import com.sun.xml.internal.ws.resources.AddressingMessages;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,5 +17,7 @@ public  class MainServlet extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter pw = resp.getWriter();
         pw.print("dsad");
+        resp.setContentType("text/html");
+        resp.setCharacterEncoding("UTF-8");
     }
 }
